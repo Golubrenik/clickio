@@ -1,0 +1,266 @@
+{
+    "CONFIG_EN": {
+        "_template": "chat-theme",
+        "_version": 2,
+        "sleep": 300,
+        "product.name": "Tefal Ingenio 13-Piece Cookware Set",
+        "product.image": "./images/product/product.png",
+        "bot.image": "./images/logo/header-logo.png",
+        "bot.padding": false,
+        "bot.product": false,
+        "input.typing": "is typing",
+        "input.processing": "Processing...",
+        "input.message": "Type your message...",
+        "input.answer": "Type your answer or choose from the options below...",
+        "boxes.front": "./images/boxes/front.png",
+        "boxes.inside": "./images/boxes/inside.png",
+        "boxes.lid": "./images/boxes/lid.png",
+        "brand.background.color": "#000000",
+        "brand.font.color": "#ffffff",
+        "brand.name": "Tefal",
+        "header.background.color": "#fff",
+        "header.font.color": "#000",
+        "header.border.color": "#ccc",
+        "header.logo": "./images/logo/header-logo.png",
+        "buttons.background.color": "#1f8815",
+        "buttons.border.color": "#c7d2fe",
+        "buttons.font.color": "#ffffff",
+        "country": "en",
+        "phone.code": "+1",
+        "phone.country": "us",
+        "page.title": "{product} | Limited-Time Special Offer",
+        "favicon": "./images/favicon/favicon.png",
+        "new-price.color": "#ff0000",
+        "info.new-price": "44 MXN",
+        "info.old-price": "2,300 MXN",
+        "info.title": "{product}",
+        "info.subtitle": "<b>Don't miss out!</b><br>The Tefal Ingenio 13-Piece Cookware Set is available now for just {price}.<br><s>Regular price: 2,300 MXN</s><br>New price: <b>{price}</b><br><br>Congratulations!<br>This is your real chance to claim the original Tefal Ingenio 13-piece cookware set at an unbeatable price.<br><br>Why so low? Ahead of Black Friday, Tefal is clearing out last season\u2019s colors to make space for new collections. That\u2019s why a limited number of sets are available at this symbolic price\u2014a special way to thank loyal customers.<br><br>There are only 200 sets at 44 MXN each!<br>Just answer 3 short questions to claim yours\u2014it takes less than a minute.<br><br>\u26a0\ufe0f Hurry: once these 200 last-season sets are gone, the deal ends. Don\u2019t wait\u2014offers like this appear only before big sales. ",
+        "info.description": "Answer 3 quick questions to participate.",
+        "info.attention": "Only 200 sets are available at this special price\u2014once they\u2019re gone, the offer ends.",
+        "loading.first": "Thank you for answering all the questions...",
+        "loading.second": "Checking your eligibility...",
+        "loading.third": "Your responses have been verified...",
+        "modal.try-again.content": "<p><b>Oops...</b></p>\n<p>This box is empty! You still have (2) attempts. Good luck!</p>",
+        "modal.welcome.content": "<p><b>Congratulations!</b></p>\n<p>You have a chance to receive a {product}!</p>\n<p>Just choose the right gift box.</p>\n<p>You have 3 attempts\u2014good luck!</p>",
+        "modal.win.content": "<p>Congratulations!</p>\n<p>The {product} is yours!</p>\n<p>1. Click \u201cOK\u201d to proceed to payment and shipping.</p>\n<p>2. Complete the form and confirm your order.</p>\n<p>3. Delivery takes 7\u201310 days.</p>",
+        "questions.items": [
+            {
+                "text": "Are you a woman or a man?",
+                "buttons": [
+                    "Woman",
+                    "Man"
+                ]
+            },
+            {
+                "text": "How old are you?",
+                "buttons": [
+                    "18\u201330 years",
+                    "31\u201340 years",
+                    "41\u201350 years",
+                    "51\u201360 years",
+                    "Over 60"
+                ]
+            },
+            {
+                "text": "How did you hear about our promotion?",
+                "buttons": [
+                    "Facebook",
+                    "Instagram",
+                    "Google",
+                    "YouTube",
+                    "TikTok",
+                    "Friends"
+                ]
+            }
+        ],
+        "prefill.message.personal": "<p><b>\ud83d\udcde Contact Information</b></p>\n<p>Please make sure your details are accurate. This allows us to:</p>\n<ul>\n<li>\u2022 Send order confirmations</li>\n<li>\u2022 Provide delivery updates</li>\n<li>\u2022 Contact you if there\u2019s any problem</li>\n</ul>",
+        "prefill.message.shipping": "<p><b>\ud83c\udfe0 Shipping Address</b></p>\n<p>Your order will be delivered to the address you provide. Please note:</p>\n<ul>\n  <li>\u2022 Delivery takes 7\u201310 business days</li>\n  <li>\u2022 Ensure someone is available to receive the package</li>\n  <li>\u2022 Tracking details sent after shipping</li>\n</ul>",
+        "prefill.submit.personal": "\u2705 <b>Personal info saved!</b>",
+        "prefill.submit.shipping": "\u2705 <b>Shipping info saved!</b>",
+        "prefill.buttons.personal": "Submit personal info",
+        "prefill.buttons.shipping": "Submit shipping info",
+        "prefill.buttons.default": "Continue",
+        "prefill.placeholder.personal": "Fill in your personal information above, then click submit.",
+        "prefill.placeholder.shipping": "Enter your shipping address above, then click submit.",
+        "prefill.error.email.message": "Enter a valid email address",
+        "prefill.error.phone.message": "Enter a valid phone number",
+        "prefill.error.required.message": "This field is required",
+        "prefill.title.order": "Order summary",
+        "prefill.title.personal": "Personal information",
+        "prefill.title.shipping": "Shipping address",
+        "prefill.order.shipping": "Shipping",
+        "prefill.order.shipping-price": "0",
+        "prefill.order.subtotal": "Subtotal",
+        "prefill.order.subtotal-price": "{price-value}",
+        "prefill.order.summary": "Order summary",
+        "prefill.order.total": "Total",
+        "prefill.order.total-price": "{price-value}",
+        "prefill.personal-information": "Personal information",
+        "prefill.placeholder.address": "Address",
+        "prefill.placeholder.city": "City",
+        "prefill.placeholder.email": "Email",
+        "prefill.placeholder.firstname": "First name",
+        "prefill.placeholder.lastname": "Last name",
+        "prefill.placeholder.phone": "Phone",
+        "prefill.placeholder.postcode": "Postal code",
+        "prefill.finish.message": "<p>Click \u201cOK\u201d to proceed to the payment page</p>"
+    },
+    "LOCALES": {
+        "es_mx": {
+            "country": "mx",
+            "phone.code": "+52",
+            "phone.country": "mx",
+            "product.name": "Juego de 13 piezas Tefal Ingenio",
+            "input.typing": "est\u00e1 escribiendo",
+            "input.processing": "Procesando...",
+            "input.message": "Escribe tu mensaje...",
+            "input.answer": "Escribe tu respuesta o elige una opci\u00f3n abajo...",
+            "page.title": "{product} | Oferta especial por tiempo limitado",
+            "info.old-price": "2,300 MXN",
+            "info.subtitle": "<b>\u00a1No lo dejes pasar!</b><br>El Juego de 13 piezas Tefal Ingenio est\u00e1 disponible hoy por solo {price}.<br><s>Precio regular: 2,300 MXN</s><br>Nuevo precio: <b>{price}</b><br><br>\u00a1Felicidades!<br>Ahora tienes la oportunidad real de conseguir el juego original de 13 piezas Tefal Ingenio pr\u00e1cticamente gratis.<br><br>\u00bfPor qu\u00e9 este precio tan bajo?<br>Antes del Buen Fin, Tefal est\u00e1 liquidando los colores de la temporada anterior para hacer espacio a nuevas colecciones. Por eso, una cantidad limitada de juegos se ofrece a un precio simb\u00f3lico\u2014una forma de agradecer a los clientes fieles.<br><br>\u00a1Solo hay 200 juegos disponibles por 44 MXN cada uno!<br>Responde 3 preguntas r\u00e1pidas y reclama el tuyo\u2014no te tomar\u00e1 ni un minuto.<br><br>\u26a0\ufe0f Importante: cuando se acaben estos 200 juegos en existencias, la promoci\u00f3n termina. No lo pienses demasiado\u2014ofertas as\u00ed solo aparecen antes de grandes eventos de rebajas.",
+            "info.description": "Responde 3 preguntas r\u00e1pidas para participar.",
+            "info.attention": "Solo hay 200 juegos a este precio especial\u2014cuando se terminen, se acaba la promoci\u00f3n.",
+            "loading.first": "Gracias por responder todas las preguntas...",
+            "loading.second": "Verificando tu elegibilidad...",
+            "loading.third": "Tus respuestas han sido validadas...",
+            "modal.try-again.content": "<p><b>Ups...</b></p>\n<p>\u00a1Esta caja est\u00e1 vac\u00eda! Te quedan (2) intentos. \u00a1Suerte!</p>",
+            "modal.welcome.content": "<p><b>\u00a1Felicidades!</b></p>\n<p>\u00a1Puedes ganar un {product}!</p>\n<p>Solo elige la caja correcta.</p>\n<p>Tienes 3 intentos\u2014\u00a1buena suerte!</p>",
+            "modal.win.content": "<p>\u00a1Felicidades!</p>\n<p>\u00a1El {product} es tuyo!</p>\n<p>1. Haz clic en \u201cOK\u201d para ir a la p\u00e1gina de pago y env\u00edo.</p>\n<p>2. Completa el formulario y confirma tu compra.</p>\n<p>3. Entrega en 7\u201310 d\u00edas.</p>",
+            "questions.items": [
+                {
+                    "text": "\u00bfEres mujer u hombre?",
+                    "buttons": [
+                        "Mujer",
+                        "Hombre"
+                    ]
+                },
+                {
+                    "text": "\u00bfCu\u00e1ntos a\u00f1os tienes?",
+                    "buttons": [
+                        "18\u201330 a\u00f1os",
+                        "31\u201340 a\u00f1os",
+                        "41\u201350 a\u00f1os",
+                        "51\u201360 a\u00f1os",
+                        "M\u00e1s de 60"
+                    ]
+                },
+                {
+                    "text": "\u00bfD\u00f3nde escuchaste sobre nuestra promoci\u00f3n?",
+                    "buttons": [
+                        "Facebook",
+                        "Instagram",
+                        "Google",
+                        "YouTube",
+                        "TikTok",
+                        "Amigos"
+                    ]
+                }
+            ],
+            "prefill.message.personal": "<p><b>\ud83d\udcde Informaci\u00f3n de contacto</b></p>\n<p>Verifica que tus datos sean correctos. Los usaremos para:</p>\n<ul>\n<li>\u2022 Enviar confirmaci\u00f3n de pedido</li>\n<li>\u2022 Darte actualizaciones de entrega</li>\n<li>\u2022 Contactarte si surge alg\u00fan problema</li>\n</ul>",
+            "prefill.message.shipping": "<p><b>\ud83c\udfe0 Direcci\u00f3n de env\u00edo</b></p>\n<p>Tu pedido se enviar\u00e1 a la direcci\u00f3n indicada. Recuerda:</p>\n<ul>\n  <li>\u2022 La entrega tarda 7\u201310 d\u00edas h\u00e1biles</li>\n  <li>\u2022 Aseg\u00farate de que alguien pueda recibir el paquete</li>\n  <li>\u2022 Te enviaremos los detalles de rastreo</li>\n</ul>",
+            "prefill.submit.personal": "\u2705 <b>\u00a1Informaci\u00f3n personal guardada!</b>",
+            "prefill.submit.shipping": "\u2705 <b>\u00a1Direcci\u00f3n guardada!</b>",
+            "prefill.buttons.personal": "Enviar informaci\u00f3n personal",
+            "prefill.buttons.shipping": "Enviar direcci\u00f3n",
+            "prefill.buttons.default": "Continuar",
+            "prefill.placeholder.personal": "Completa tu informaci\u00f3n personal arriba y haz clic en Enviar.",
+            "prefill.placeholder.shipping": "Escribe tu direcci\u00f3n de env\u00edo y haz clic en Enviar.",
+            "prefill.error.email.message": "Introduce un correo electr\u00f3nico v\u00e1lido",
+            "prefill.error.phone.message": "Introduce un n\u00famero de tel\u00e9fono v\u00e1lido",
+            "prefill.error.required.message": "Este campo es obligatorio",
+            "prefill.title.order": "Resumen del pedido",
+            "prefill.title.personal": "Informaci\u00f3n personal",
+            "prefill.title.shipping": "Direcci\u00f3n de env\u00edo",
+            "prefill.order.shipping": "Env\u00edo",
+            "prefill.order.subtotal": "Subtotal",
+            "prefill.order.summary": "Resumen del pedido",
+            "prefill.personal-information": "Informaci\u00f3n personal",
+            "prefill.placeholder.address": "Direcci\u00f3n",
+            "prefill.placeholder.city": "Ciudad",
+            "prefill.placeholder.email": "Correo electr\u00f3nico",
+            "prefill.placeholder.firstname": "Nombre",
+            "prefill.placeholder.lastname": "Apellido",
+            "prefill.placeholder.phone": "Tel\u00e9fono",
+            "prefill.placeholder.postcode": "C\u00f3digo postal",
+            "prefill.finish.message": "<p>Haz clic en \u201cOK\u201d para ir a la p\u00e1gina de pago</p>"
+        },
+        "ES_MX": {
+            "country": "mx",
+            "phone.code": "+52",
+            "phone.country": "mx",
+            "product.name": "Juego de 13 piezas Tefal Ingenio",
+            "input.typing": "est\u00e1 escribiendo",
+            "input.processing": "Procesando...",
+            "input.message": "Escribe tu mensaje...",
+            "input.answer": "Escribe tu respuesta o elige una opci\u00f3n abajo...",
+            "page.title": "{product} | Oferta especial por tiempo limitado",
+            "info.old-price": "2,300 MXN",
+            "info.subtitle": "<b>\u00a1No lo dejes pasar!</b><br>El Juego de 13 piezas Tefal Ingenio est\u00e1 disponible hoy por solo {price}.<br><s>Precio regular: 2,300 MXN</s><br>Nuevo precio: <b>{price}</b><br><br>\u00a1Felicidades!<br>Ahora tienes la oportunidad real de conseguir el juego original de 13 piezas Tefal Ingenio pr\u00e1cticamente gratis.<br><br>\u00bfPor qu\u00e9 este precio tan bajo?<br>Antes del Buen Fin, Tefal est\u00e1 liquidando los colores de la temporada anterior para hacer espacio a nuevas colecciones. Por eso, una cantidad limitada de juegos se ofrece a un precio simb\u00f3lico\u2014una forma de agradecer a los clientes fieles.<br><br>\u00a1Solo hay 200 juegos disponibles por 44 MXN cada uno!<br>Responde 3 preguntas r\u00e1pidas y reclama el tuyo\u2014no te tomar\u00e1 ni un minuto.<br><br>\u26a0\ufe0f Importante: cuando se acaben estos 200 juegos en existencias, la promoci\u00f3n termina. No lo pienses demasiado\u2014ofertas as\u00ed solo aparecen antes de grandes eventos de rebajas.",
+            "info.description": "Responde 3 preguntas r\u00e1pidas para participar.",
+            "info.attention": "Solo hay 200 juegos a este precio especial\u2014cuando se terminen, se acaba la promoci\u00f3n.",
+            "loading.first": "Gracias por responder todas las preguntas...",
+            "loading.second": "Verificando tu elegibilidad...",
+            "loading.third": "Tus respuestas han sido validadas...",
+            "modal.try-again.content": "<p><b>Ups...</b></p>\n<p>\u00a1Esta caja est\u00e1 vac\u00eda! Te quedan (2) intentos. \u00a1Suerte!</p>",
+            "modal.welcome.content": "<p><b>\u00a1Felicidades!</b></p>\n<p>\u00a1Puedes ganar un {product}!</p>\n<p>Solo elige la caja correcta.</p>\n<p>Tienes 3 intentos\u2014\u00a1buena suerte!</p>",
+            "modal.win.content": "<p>\u00a1Felicidades!</p>\n<p>\u00a1El {product} es tuyo!</p>\n<p>1. Haz clic en \u201cOK\u201d para ir a la p\u00e1gina de pago y env\u00edo.</p>\n<p>2. Completa el formulario y confirma tu compra.</p>\n<p>3. Entrega en 7\u201310 d\u00edas.</p>",
+            "questions.items": [
+                {
+                    "text": "\u00bfEres mujer u hombre?",
+                    "buttons": [
+                        "Mujer",
+                        "Hombre"
+                    ]
+                },
+                {
+                    "text": "\u00bfCu\u00e1ntos a\u00f1os tienes?",
+                    "buttons": [
+                        "18\u201330 a\u00f1os",
+                        "31\u201340 a\u00f1os",
+                        "41\u201350 a\u00f1os",
+                        "51\u201360 a\u00f1os",
+                        "M\u00e1s de 60"
+                    ]
+                },
+                {
+                    "text": "\u00bfD\u00f3nde escuchaste sobre nuestra promoci\u00f3n?",
+                    "buttons": [
+                        "Facebook",
+                        "Instagram",
+                        "Google",
+                        "YouTube",
+                        "TikTok",
+                        "Amigos"
+                    ]
+                }
+            ],
+            "prefill.message.personal": "<p><b>\ud83d\udcde Informaci\u00f3n de contacto</b></p>\n<p>Verifica que tus datos sean correctos. Los usaremos para:</p>\n<ul>\n<li>\u2022 Enviar confirmaci\u00f3n de pedido</li>\n<li>\u2022 Darte actualizaciones de entrega</li>\n<li>\u2022 Contactarte si surge alg\u00fan problema</li>\n</ul>",
+            "prefill.message.shipping": "<p><b>\ud83c\udfe0 Direcci\u00f3n de env\u00edo</b></p>\n<p>Tu pedido se enviar\u00e1 a la direcci\u00f3n indicada. Recuerda:</p>\n<ul>\n  <li>\u2022 La entrega tarda 7\u201310 d\u00edas h\u00e1biles</li>\n  <li>\u2022 Aseg\u00farate de que alguien pueda recibir el paquete</li>\n  <li>\u2022 Te enviaremos los detalles de rastreo</li>\n</ul>",
+            "prefill.submit.personal": "\u2705 <b>\u00a1Informaci\u00f3n personal guardada!</b>",
+            "prefill.submit.shipping": "\u2705 <b>\u00a1Direcci\u00f3n guardada!</b>",
+            "prefill.buttons.personal": "Enviar informaci\u00f3n personal",
+            "prefill.buttons.shipping": "Enviar direcci\u00f3n",
+            "prefill.buttons.default": "Continuar",
+            "prefill.placeholder.personal": "Completa tu informaci\u00f3n personal arriba y haz clic en Enviar.",
+            "prefill.placeholder.shipping": "Escribe tu direcci\u00f3n de env\u00edo y haz clic en Enviar.",
+            "prefill.error.email.message": "Introduce un correo electr\u00f3nico v\u00e1lido",
+            "prefill.error.phone.message": "Introduce un n\u00famero de tel\u00e9fono v\u00e1lido",
+            "prefill.error.required.message": "Este campo es obligatorio",
+            "prefill.title.order": "Resumen del pedido",
+            "prefill.title.personal": "Informaci\u00f3n personal",
+            "prefill.title.shipping": "Direcci\u00f3n de env\u00edo",
+            "prefill.order.shipping": "Env\u00edo",
+            "prefill.order.subtotal": "Subtotal",
+            "prefill.order.summary": "Resumen del pedido",
+            "prefill.personal-information": "Informaci\u00f3n personal",
+            "prefill.placeholder.address": "Direcci\u00f3n",
+            "prefill.placeholder.city": "Ciudad",
+            "prefill.placeholder.email": "Correo electr\u00f3nico",
+            "prefill.placeholder.firstname": "Nombre",
+            "prefill.placeholder.lastname": "Apellido",
+            "prefill.placeholder.phone": "Tel\u00e9fono",
+            "prefill.placeholder.postcode": "C\u00f3digo postal",
+            "prefill.finish.message": "<p>Haz clic en \u201cOK\u201d para ir a la p\u00e1gina de pago</p>"
+        }
+    }
+}

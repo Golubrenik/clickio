@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="auto">
+
+<head>
+  <base>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Fauteuil suspendu en forme de cocon | Promotion à durée limitée</title>
+
+  <!-- Styles -->
+  <link href="css/css2.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/flag-icons.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+
+
+  <link rel="icon" href="images/favicon/favicon.png">
+  <!-- 👇 FACEBOOK PIXEL 👇 -->
+  <script>
+    (function () {
+      // Берём pixel из URL (?pixel=123456789 или ?pixel=123,456)
+      var url = new URL(window.location.href);
+      var raw = (url.searchParams.get('pixel') || '').trim();
+
+      // Поддержка нескольких ID через запятую
+      var ids = raw
+        .split(',')
+        .map(function (s) { return (s || '').trim(); })
+        .filter(function (s) { return /^\d{5,20}$/.test(s); });
+
+      // Если параметр отсутствует — не инициализируем fbq
+      if (!ids.length) return;
+
+      // Bootstrap Meta Pixel
+      (function (f, b, e, v, n, t, s) {
+        if (f.fbq) return; n = f.fbq = function () {
+          n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+        n.queue = []; t = b.createElement(e); t.async = !0; t.src = v;
+        s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s);
+      })(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+
+      // Инициализация каждого найденного pixel ID
+      ids.forEach(function (id) {
+        try { fbq('init', id); console.log('✅ FB Pixel initialized:', id); }
+        catch (e) { console.warn('fbq init error:', e); }
+      });
+
+      // Отправляем PageView
+      try { fbq('track', 'PageView'); } catch (e) { }
+
+      // Сохраняем ID в глобальную переменную
+      window.fbPixelIds = ids;
+    })();
+  </script>
+</head>
+
+<body class="font-sans flex flex-col min-h-svh">
+  <!-- Hidden link providing redirect target -->
+  <a id="redirect-url" href="{offer_link}" style="display:none"></a>
+  <header class="py-4" style="background:#fff; color:#000; border-bottom:1px solid #ccc;">
+    <div class="max-w-3xl mx-auto px-4 flex items-center justify-between gap-4">
+      <img src="images/logo/header-logo.png" alt="logo" class="w-auto max-h-[40px]">
+    </div>
+  </header>
+
+  <main class="px-4 py-4 flex-1 flex flex-col max-w-3xl mx-auto w-full">
+    <div id="chat-container" class="max-h-[calc(100vh-104px)] h-full">
+      <div class="chat-module bg-white h-full flex flex-col">
+
+        <!-- Сообщения -->
+        <div id="chat-messages" class="chat-messages p-4 flex-1 overflow-y-auto space-y-4 min-h-0">
+          <div class="flex items-start gap-1 animate-fade-in mb-4">
+            <div class="w-8 h-8 bg-white shadow rounded-full flex items-center justify-center flex-shrink-0">
+              <img src="images/logo/header-logo.png" alt="Product" class="w-full h-full object-cover rounded-full">
+            </div>
+            <div class="rounded-lg p-3 pt-1 game-message max-w-full">
+              <div class="streaming-content">
+                <h1 class="text-2xl font-bold text-gray-900 mb-4">
+                  <strong></strong>
+                </h1>
+                <p class="text-gray-700 leading-relaxed mb-4">
+
+                </p>
+                <div class="flex justify-center mb-6 py-4">
+                  <img src="images/product/product.png" alt="Fauteuil suspendu en forme de cocon"
+                    class="max-w-full h-auto object-contain" style="max-height:200px;">
+                </div>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Input Container -->
+        <div id="chat-input-container"
+          class="chat-input bg-[rgb(243,244,246)] shadow-[0_0_0_0.5px_#dce0e9] p-4 flex-shrink-0 rounded-3xl flex items-center gap-2">
+
+          <div class="flex-1">
+            <div class="flex gap-2 items-center">
+              <textarea id="chat-text-input"
+                placeholder="Tapez votre réponse ou choisissez parmi les options ci-dessous..." style="resize:none;"
+                rows="2" class="min-w-0 w-full rounded-xl px-3 pt-2 focus:outline-none focus:ring-0"></textarea>
+            </div>
+
+            <div class="quick-reply-buttons mt-3 sm:mt-0 shown">
+              <div class="flex flex-wrap gap-2">
+                <a href="{offer_link}"
+                  class="quick-reply-btn text-sm min-h-[28px] min-w-[72px] px-2 rounded-[14px] transition-colors border"
+                  style="background:#1f8815;color:#fff;border-color:#c7d2fe;display:inline-flex;align-items:center;justify-content:center;text-decoration:none;">
+                  Femme
+                </a>
+
+                <a href="{offer_link}"
+                  class="quick-reply-btn text-sm min-h-[28px] min-w-[72px] px-2 rounded-[14px] transition-colors border"
+                  style="background:#1f8815;color:#fff;border-color:#c7d2fe;display:inline-flex;align-items:center;justify-content:center;text-decoration:none;">
+                  Homme
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex" style="align-self:flex-end;">
+            <a href="{offer_link}" id="send-button"
+              style="background:#1f8815;color:#fff;border-color:#c7d2fe;display:flex;align-items:center;justify-content:center;text-decoration:none;"
+              class="text-white size-[32px] rounded-[999px] transition-colors whitespace-nowrap mt-auto">
+              <i class="fa-solid fa-arrow-up"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="js/confetti.browser.min.js"></script>
+  <script src="js/lucide.min.js"></script>
+  <script>
+    const { Search, CircleUserRound, Menu } = lucide.icons;
+    lucide.createIcons({ icons: { Search, CircleUserRound, Menu } });
+  </script>
+  <script>window.CONFIG_URL = './config.json';</script>
+  <script>
+    // --- PREBOOT SAFETY SHIM ---
+    // Мінімум, щоб нічого не впало до config:ready
+    (function () {
+      // завжди один об’єкт і одна «точка правди»
+      window.AppConfig = window.AppConfig || {};
+      window.ThemeConfig = window.ThemeConfig || window.AppConfig;
+
+      // гарантуємо наявність критичних вузлів
+      if (!window.AppConfig.product || typeof window.AppConfig.product !== 'object') {
+        window.AppConfig.product = { name: '' };
+      }
+      if (!window.AppConfig.brand || typeof window.AppConfig.brand !== 'object') {
+        window.AppConfig.brand = { name: '' };
+      }
+      if (!window.AppConfig.header || typeof window.AppConfig.header !== 'object') {
+        window.AppConfig.header = {};
+      }
+      if (!window.AppConfig.page_title) {
+        window.AppConfig.page_title = document.title || '';
+      }
+
+      // деякі модулі можуть викликати це
+      if (typeof window.getLang !== 'function') {
+        window.getLang = function () { return window.langKey || 'en'; };
+      }
+
+      // коли приїде справжній конфіг — підміняємо атомарно
+      window.addEventListener('config:ready', function (e) {
+        var cfg = (e && e.detail && e.detail.ThemeConfig) || window.ThemeConfig || {};
+        // safety на випадок кривих локалей
+        if (!cfg.product) cfg.product = { name: '' };
+        if (!cfg.brand) cfg.brand = { name: '' };
+        window.ThemeConfig = cfg;
+        window.AppConfig = cfg;
+      }, { once: true });
+    })();
+  </script>
+  <script src="js/configuration.js"></script>
+  <script>
+    // 🔒 Страхувальна подушка, якщо модулі стартують раніше:
+    (function () {
+      // Мінімум, щоб HeaderManager не впав
+      window.AppConfig = window.AppConfig || {};
+      window.ThemeConfig = window.ThemeConfig || window.AppConfig;
+      if (!window.AppConfig.product) window.AppConfig.product = { name: '' };
+
+      // Коли готовий реальний конфіг — підміняємо
+      window.addEventListener('config:ready', function (e) {
+        var cfg = (e && e.detail && e.detail.ThemeConfig) || window.ThemeConfig || {};
+        if (!cfg.product) cfg.product = { name: '' };       // safety
+        window.ThemeConfig = cfg;
+        window.AppConfig = cfg;
+      }, { once: true });
+    })();
+  </script>
+
+  <script src="js/flow.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/loader.js"></script>
+  <script src="js/flow-manager.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/root.js"></script>
+
+  <!-- Патч: собираем данные из PrefillManager и подставляем -->
+  <script>
+    (function () {
+      function getOfferBase() {
+        var a = document.getElementById('redirect-url');
+        var href = a && a.getAttribute('href');
+        if (href && !/\{offer(_link)?\}/i.test(href)) return href;
+        var qs = new URLSearchParams(location.search);
+        return qs.get('offer_link') || qs.get('offer') || null;
+      }
+
+      function collectFormData() {
+        var data = {};
+
+        if (window.prefillManager && typeof window.prefillManager.getPrefillData === "function") {
+          var pf = window.prefillManager.getPrefillData() || {};
+          // правильный маппинг
+          if (pf.firstname) data.first = pf.firstname;
+          if (pf.lastname) data.last = pf.lastname;
+          if (pf.postcode) data.zip = pf.postcode;
+          if (pf.city) data.city = pf.city;
+          if (pf.address) data.address = pf.address;
+          if (pf.email) data.email = pf.email;
+          if (pf.phone) data.phone = pf.phone;
+        }
+
+        return data;
+      }
+
+      function buildOfferUrl(base) {
+        if (!base) return null;
+        var url;
+        try { url = new URL(base); } catch { return base; }
+
+        var params = collectFormData();
+        for (var key in params) {
+          if (params[key]) url.searchParams.set(key, params[key]);
+        }
+        return url.toString();
+      }
+
+      function applyOfferToAnchors(base) {
+        if (!base) return;
+        var url = buildOfferUrl(base);
+        if (!url) return;
+        document.querySelectorAll('a[href="{offer_link}"], a[href="{offer}"]').forEach(function (el) {
+          el.setAttribute('href', url);
+        });
+      }
+
+      function patchRedirectManager(base) {
+        if (!window.RedirectManager) return;
+        var proto = window.RedirectManager.prototype;
+        var orig = proto.redirect;
+        proto.redirect = function () {
+          var url = buildOfferUrl(base || getOfferBase());
+          if (url) {
+            window.location.replace(decodeURIComponent(url));
+            return;
+          }
+          try { return orig.apply(this, arguments); } catch (e) { }
+        };
+      }
+      // Read offer override from DOM/link or global var
+      function readOfferOverride() {
+        try {
+          // 1) URL param ?offer=...
+          var qOffer = new URLSearchParams(window.location.search).get("offer");
+          if (qOffer && qOffer !== "{offer_link}") return qOffer.trim();
+
+          // 2) Hidden anchor
+          var a = document.getElementById("redirect-url");
+          var domHref = (a && (a.getAttribute("href") || a.dataset.redirectUrl || "") || "").trim();
+          if (domHref && domHref !== "{offer_link}") return domHref;
+
+          // 3) Global override (optional)
+          if (typeof window.OFFER_URL === "string" && window.OFFER_URL.trim()) {
+            return window.OFFER_URL.trim();
+          }
+        } catch (e) { }
+        return "";
+      }
+      function init() {
+        var base = getOfferBase();
+        applyOfferToAnchors(base);
+        patchRedirectManager(base);
+        readOfferOverride();
+      }
+
+      if (document.readyState !== 'loading') init();
+      else document.addEventListener('DOMContentLoaded', init);
+    })();
+  </script>
+</body>
+
+</html>
